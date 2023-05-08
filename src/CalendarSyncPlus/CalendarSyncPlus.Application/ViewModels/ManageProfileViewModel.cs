@@ -94,7 +94,7 @@ namespace CalendarSyncPlus.Application.ViewModels
 
         private async Task AddNewProfile<T>(ObservableCollection<T> profileList, T profile) where T : SyncProfile
         {
-            if (profileList.Count > 4)
+            if (profileList.Count > 10)
             {
                 MessageService.ShowMessageAsync("You have reached the maximum number of profiles.");
                 return;
